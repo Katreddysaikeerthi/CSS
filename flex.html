@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Flex Blocks</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            justify-content: space-between;
+        
+
+        }
+
+        .image-box img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-box {
+            background-color: paleturquoise;
+            padding: 15px 20px;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="parent">
+            <div class="image-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxF3vupqic9XjaGkZTVE_a5S8aFhnc1ilWvg&s" alt="Image 1">
+            </div>
+            <div class="text-box">
+               Golden Temple (Harmandir Sahib), Amritsar:
+               This iconic Sikh gurdwara is known for its stunning architecture, gilded exterior, and spiritual atmosphere. It's a place of pilgrimage and equality for all, regardless of background.
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="image-box">
+                <img src="https://c9admin.cottage9.com/uploads/2294/Historical-Perspective.jpg" alt="Image 2">
+            </div>
+            <div class="text-box">
+                 Tirumala Venkateswara Temple, Tirupati:
+                 Dedicated to Lord Venkateswara (Vishnu), this temple is one of the richest and most visited pilgrimage sites in the world. 
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="image-box">
+                <img src="https://sanatanajourney.com/wp-content/uploads/2025/03/Madurai-Meenakshi-Amman-Temple-Features.jpg" alt="Image 3">
+            </div>
+            <div class="text-box">
+                 Meenakshi Temple, Madurai:
+                 A historic temple complex dedicated to Goddess Parvati (Meenakshi) and her consort, Lord Shiva. It's famous for its towering gopurams (gateway towers) adorned with intricate sculptures.
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="image-box">
+                <img src="https://admin.stayatpurijagannatha.in/images/frontend/main-slider-1_1670308972.jpg" alt="Image 4">
+            </div>
+            <div class="text-box">
+                Shree Jagannath Temple, Puri:
+                Dedicated to Lord Jagannath (Vishnu), this temple is a major pilgrimage site in eastern India and is known for its annual Rath Yatra (chariot festival). 
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

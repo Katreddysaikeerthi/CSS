@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar with Dropdown</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: aquamarine;
+      padding: 10px 20px;
+      color: blueviolet;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item a {
+      text-decoration: none;
+      color: chocolate;
+      padding: 8px 10px;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: pink;
+      color: lightskyblue;
+      min-width: 180px;
+      top: 35px;
+      left: 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="#">Visual Arts</a>
+        <div class="dropdown">
+            <a href="#">Painting</a>
+            <a href="#">Drawing</a>
+            <a href="#">Sculpture</a>
+            <a href="#">Photography</a>
+            <a href="#">Architecture</a>
+            <a href="#">Printmaking</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Literary Arts</a>
+        <div class="dropdown">
+            <a href="#">Poetry</a>
+            <a href="#">Drama</a>
+            <a href="#">Prose</a>
+            <a href="#">Essays</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Performing Arts</a>
+        <div class="dropdown">
+            <a href="#">Music</a>
+            <a href="#">Dancce</a>
+            <a href="#">Theatre</a>
+            <a href="#">Opera</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Cinematic Arts</a>
+        <div class="dropdown">
+            <a href="#">Movie-making</a>
+            <a href="#">Animation</a>
+            <a href="#">Documentaries</a>
+        </div> 
+      </div>
+      <div class="nav-item">
+        <a href="#">Musical Arts</a>
+        <div class="dropdown">
+            <a href="#">Vocal Music</a>
+            <a href="#">Instrumental Music</a>
+            <a href="#">Composition</a>
+            <a href="#">Sound Design</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#">Digital Arts</a>
+        <div class="dropdown">
+            <a href="#">Vocal Music</a>
+            <a href="#">Instrumental Music</a>
+            <a href="#">Composition</a>
+            <a href="#">Sound Design</a>
+        </div>
+      </div>
+  </nav>
+
+</body>
+</html>
