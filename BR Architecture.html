@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BR Architects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  color: black;
+}
+
+.nav-links {
+  float: right;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  position: relative;
+  margin-top: 60px;
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
+.header-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.black-bg {
+  background: black;
+  padding: 10px;
+}
+
+.light-text {
+  color: lightgray;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.project-grid {
+  text-align: center;
+}
+
+.project-item {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  vertical-align: top;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.team-grid {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.team-member img {
+  width: 100%;
+}
+
+.role {
+  color: gray;
+  font-style: italic;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  background: lightgray;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form input,
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.map-container {
+  margin-top: 30px;
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.footer a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="navbar-container">
+    <a href="#home" class="brand">BR Architects</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="home">
+  <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Architecture" class="header-img">
+  <div class="header-text">
+    <h1><span class="black-bg">BR</span> <span class="light-text">Architects</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="main-content">
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="project-grid">
+      <!-- Project Items -->
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+          <div class="image-label">Summer House</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+          <div class="image-label">Brick House</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated">
+          <div class="image-label">Renovated</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+          <div class="image-label">Barn House</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Summer House">
+          <div class="image-label">Summer House</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Brick House">
+          <div class="image-label">Brick House</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Renovated">
+          <div class="image-label">Renovated</div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="image-container">
+          <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Barn House">
+          <div class="image-label">Barn House</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h3 class="section-title">About</h3>
+    <p class="section-paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+    </p>
+    <div class="team-grid">
+      <!-- Team Members -->
+      <div class="team-member">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John">
+        <h3>John Doe</h3>
+        <p class="role">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum...</p>
+        <button class="contact-btn">Contact</button>
+      </div>
+      <div class="team-member">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane">
+        <h3>Jane Doe</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum...</p>
+        <button class="contact-btn">Contact</button>
+      </div>
+      <div class="team-member">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike">
+        <h3>Mike Ross</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum...</p>
+        <button class="contact-btn">Contact</button>
+      </div>
+      <div class="team-member">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan">
+        <h3>Dan Star</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum...</p>
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h3 class="section-title">Contact</h3>
+    <p>Let's get in touch and talk about your next project.</p>
+    <form action="page.php" method="post" target="_blank" class="contact-form">
+      <input type="text" name="Name" placeholder="Name" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <input type="text" name="Subject" placeholder="Subject" required>
+      <input type="text" name="Comment" placeholder="Comment" required>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Map Section -->
+  <div class="map-container">
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map" class="map-img">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
